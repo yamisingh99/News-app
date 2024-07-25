@@ -17,13 +17,13 @@ const App = () => {
       let url = '';
 
       if (category === 'all-news') {
-        url = `http://localhost:5000/all-news`;
+        url = `https://news-server-1-ipss.onrender.com/all-news`;
       } else if (category === 'top-headlines') {
-        url = `http://localhost:5000/top-headlines?category=${category}`;
+        url = `https://news-server-1-ipss.onrender.com/top-headlines?category=${category}`;
       } else if (category && !country) {
-        url = `http://localhost:5000/category/${category}`;
+        url = `https://news-server-1-ipss.onrender.com/category/${category}`;
       } else if (country) {
-        url = `http://localhost:5000/country/${country}`;
+        url = `https://news-server-1-ipss.onrender.com/${country}`;
       }
 
       try {
